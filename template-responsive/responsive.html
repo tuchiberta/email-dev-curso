@@ -4,6 +4,29 @@
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<style type="text/css">
+		@media screen and (max-width: 480px) {
+			.two-column .column,
+			.three-column .column {
+				max-width: 100% !important;
+			}
+			.two-column img {
+				max-width: 100% !important;
+			}
+			.three-column img {
+				max-width: 50% !important;
+			}
+		}
+
+		@media screen and (min-width: 481px) and (max-width: 640px) {
+			.three-column .column {
+				max-width: 33% !important;
+			}
+			.two-column .column {
+				max-width: 50% !important;
+			}
+		}
+	</style>
 </head>
 <body>
 	<table border="1" >
@@ -22,9 +45,9 @@
 		</tr>
 		<tr>
 			<!-- 2 columnas -->
-			<td>
+			<td class="two-column">
 				<!-- columna izquierda -->
-				<table border="1">
+				<table class="column" border="1">
 					<tr>
 						<td>
 							<!-- curso 1 -->
@@ -50,7 +73,7 @@
 					</tr>
 				</table>
 				<!-- columna derecha -->
-				<table border="1" >
+				<table class="column" border="1" >
 					<tr>
 						<td>
 							<!-- curso 2 -->
@@ -80,9 +103,9 @@
 		</tr>
 		<tr>
 			<!-- 3 columnas -->
-			<td>
+			<td class="three-column">
 				<!-- columna izquierda -->
-				<table border="1">
+				<table class="column" border="1">
 					<tr>
 						<td>
 							<!-- blog 1 -->
@@ -108,7 +131,7 @@
 					</tr>
 				</table>
 				<!-- columna centro -->
-				<table border="1">
+				<table class="column" border="1">
 					<tr>
 						<td>
 							<!-- blog 2 -->
@@ -134,7 +157,7 @@
 					</tr>
 				</table>
 				<!-- columna derecha -->
-				<table border="1" >
+				<table class="column" border="1" >
 					<tr>
 						<td>
 							<!-- blog 3 -->
